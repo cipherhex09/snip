@@ -1,0 +1,19 @@
+name = "snip"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+
+# Create the namespace with `npx wrangler kv namespace create SNIPS`
+# and paste the id it prints here.
+[[kv_namespaces]]
+binding = "SNIPS"
+id = "REPLACE_WITH_YOUR_KV_ID"
+
+[vars]
+# Largest paste in bytes. KV allows up to 25 MiB.
+MAX_BYTES = "1048576"
+# Length of generated ids. 6 characters gives about 28 billion combinations.
+ID_LENGTH = "6"
+
+# To require a token for creating snips, run:
+#   npx wrangler secret put SNIP_TOKEN
+# Reading snips never needs a token.

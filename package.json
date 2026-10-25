@@ -1,0 +1,17 @@
+{
+  "name": "snip",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A paste bin and link shortener in one Cloudflare Worker",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "miniflare": "^4.20260730.0",
+    "wrangler": "^4.152.0"
+  }
+}
